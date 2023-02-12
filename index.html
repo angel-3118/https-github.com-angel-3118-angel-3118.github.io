@@ -1,0 +1,78 @@
+<head>
+    <title>Dealership Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript">
+      function openImage(imageSrc) {
+        var modal = document.getElementById("modal");
+        var modalImg = document.getElementById("modalImg");
+        modal.style.display = "block";
+        modalImg.src = imageSrc;
+      }
+  
+      function closeModal() {
+        var modal = document.getElementById("modal");
+        modal.style.display = "none";
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Dealership Name</h1>
+      <nav>
+        <ul>
+          <li><a href="#inventory">Inventory</a></li>
+                  <li><a href="#contact">Collision Repair</a></li>
+  
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="inventory">
+        <h2>Vehicle Inventory</h2>
+        <ul>
+          <li>
+            <h3>Vehicle 1</h3>
+            <img src="vehicle1.jpg" alt="Vehicle 1" onclick="openImage(this.src)">
+            <p>Vehicle 1 description</p>
+          </li>
+          <li>
+            <h3>Vehicle 2</h3>
+            <img src="vehicle2.jpg" alt="Vehicle 2" onclick="openImage(this.src)">
+            <p>Vehicle 2 description</p>
+          </li>
+        </ul>
+      </section>
+      <section id="collision-repair">
+    <h2>Collision Repair</h2>
+    <p>At [Your Company Name], we understand the stress and inconvenience that come with car accidents. That's why we offer comprehensive collision repair services to get you back on the road as soon as possible.</p>
+    <p>Our team of certified technicians is trained to repair all types of vehicles, from basic fender benders to major collisions. We use the latest tools and techniques to ensure a high-quality repair that's as good as new.</p>
+    <p>We work with all insurance companies to simplify the claim process and take care of everything from start to finish. And, as a full-service collision center, we offer rental car assistance, towing services, and a lifetime warranty on all of our repairs.</p>
+    <p>If you've been in an accident, don't hesitate to contact us. We'll be there to help you every step of the way.</p>
+  </section>
+  
+      <section id="about">
+        <h2>About Us</h2>
+        <p>Dealership description and information</p>
+      </section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+    </main>
+    <div id="modal" onclick="closeModal()">
+      <img id="modalImg">
+    </div>
+    <footer>
+      <p>&copy; 2023 Richard Auto Sale Name</p>
+    </footer>
+  </body>
