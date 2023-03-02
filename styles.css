@@ -1,3 +1,4 @@
+/*I thought we were using a red color, did he ask for us to use blue instead?*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +7,7 @@ body {
   
   header {
     background-color: #3399CC;
+    /*For the height of the header i'm thinking we should have a fixed height. Or maybe add a marging to the vehicle container.*/
     padding: 20px;
     text-align: center;
     position: fixed;
@@ -45,6 +47,7 @@ body {
     padding: 40px;
   }
   
+
   section h2 {
     margin-top: 0;
     text-align: center;
@@ -99,6 +102,21 @@ body {
     color: white;
     padding: 10px;
     text-align: center;
+  }
+  
+  /*For the height of the header i'm thinking we should have a fixed height.
+  Or maybe add a marging to the vehicle container. Here i added a margin to the section inventory.*/
+  /* Inventory wrapper */
+  #inventory{
+    margin-top: 100px;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+  }
+  /* Vehicles styles */
+  #vehicle_container img{
+    height: auto;
+    width: 100%;
   }
   /* Collision Repair Section */
   #collision-repair {

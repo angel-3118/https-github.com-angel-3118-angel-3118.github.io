@@ -16,6 +16,7 @@
     </script>
   </head>
   <body>
+    <!--Header with dealership name and links to other parts of the website-->
     <header>
       <h1>Dealership Name</h1>
       <nav>
@@ -28,22 +29,33 @@
         </ul>
       </nav>
     </header>
+    <!--Vehicle Inventory, location with vehicle info and image-->
     <main>
       <section id="inventory">
+        <!--Added a container around each vehicle element wihe same id. 
+        That way all vehicle elemnts will have the same properties but they will each be their own element.-->
+        <div id="vehicle_container"> 
         <h2>Vehicle Inventory</h2>
         <ul>
           <li>
             <h3>Vehicle 1</h3>
-            <img src="vehicle1.jpg" alt="Vehicle 1" onclick="openImage(this.src)">
+            <img src="images/vehicle1.jpg" alt="Vehicle 1" onclick="openImage(this.src)">
             <p>Vehicle 1 description</p>
           </li>
+        </ul>
+      </div>
+      <div id="vehicle_container">
+        <ul>
           <li>
             <h3>Vehicle 2</h3>
-            <img src="vehicle2.jpg" alt="Vehicle 2" onclick="openImage(this.src)">
+            <img src="images/vehicle2.jpg" alt="Vehicle 2" onclick="openImage(this.src)">
             <p>Vehicle 2 description</p>
           </li>
         </ul>
+      </div>
       </section>
+      <!--Colision repair area, clients learn more about how the company can help them in accidents. 
+        Im thinking of adding a button here that leads the client to the contact section/page -->
       <section id="collision-repair">
     <h2>Collision Repair</h2>
     <p>At [Your Company Name], we understand the stress and inconvenience that come with car accidents. That's why we offer comprehensive collision repair services to get you back on the road as soon as possible.</p>
@@ -51,11 +63,12 @@
     <p>We work with all insurance companies to simplify the claim process and take care of everything from start to finish. And, as a full-service collision center, we offer rental car assistance, towing services, and a lifetime warranty on all of our repairs.</p>
     <p>If you've been in an accident, don't hesitate to contact us. We'll be there to help you every step of the way.</p>
   </section>
-  
+  <!--About section, info on the company-->
       <section id="about">
         <h2>About Us</h2>
         <p>Dealership description and information</p>
       </section>
+<!--Contact section. Im wondering if its better to do this in a separate page?-->
       <section id="contact">
         <h2>Contact Us</h2>
         <form>
