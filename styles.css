@@ -6,7 +6,8 @@ body {
   }
   
   header {
-    background-color: #3399CC;
+    background-color: #ff0000
+;
     /*For the height of the header i'm thinking we should have a fixed height. Or maybe add a marging to the vehicle container.*/
     padding: 20px;
     text-align: center;
@@ -52,7 +53,8 @@ body {
     margin-top: 0;
     text-align: center;
     font-size: 28px;
-    color: #3399CC;
+    color: #ff0000
+;
   }
   
   form {
@@ -75,18 +77,21 @@ body {
   }
   
   input[type="text"], input[type="email"] {
-    border: 1px solid #3399CC;
+    border: 1px solid #ff0000
+;
     border-radius: 5px;
   }
   
   textarea {
-    border: 1px solid #3399CC;
+    border: 1px solid #ff0000
+;
     border-radius: 5px;
     height: 150px;
   }
   
   input[type="submit"] {
-    background-color: #3399CC;
+    background-color: #ff0000
+;
     color: white;
     border: none;
     border-radius: 5px;
@@ -98,7 +103,8 @@ body {
   }
   
   footer {
-    background-color: #3399CC;
+    background-color: #ff0000
+;
     color: white;
     padding: 10px;
     text-align: center;
