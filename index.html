@@ -32,27 +32,29 @@
     <!--Vehicle Inventory, location with vehicle info and image-->
     <main>
       <section id="inventory">
+        <h2>Vehicle Inventory</h2> 
         <!--Added a container around each vehicle element wihe same id. 
         That way all vehicle elemnts will have the same properties but they will each be their own element.-->
-        <div id="vehicle_container"> 
-        <h2>Vehicle Inventory</h2>
-        <ul>
-          <li>
-            <h3>Vehicle 1</h3>
-            <img src="images/vehicle1.jpg" alt="Vehicle 1" onclick="openImage(this.src)">
-            <p>Vehicle 1 description</p>
-          </li>
-        </ul>
-      </div>
-      <div id="vehicle_container">
-        <ul>
-          <li>
-            <h3>Vehicle 2</h3>
-            <img src="images/vehicle2.jpg" alt="Vehicle 2" onclick="openImage(this.src)">
-            <p>Vehicle 2 description</p>
-          </li>
-        </ul>
-      </div>
+        <div id="vehicle_container">
+          <div id="vehicle">
+          <ul>
+            <li>
+              <h3>Vehicle 1</h3>
+              <img src="images/vehicle1.jpg" alt="Vehicle 1" onclick="openImage(this.src)">
+              <p>Vehicle 1 description</p>
+            </li>
+          </ul>
+                </div>
+                <div id="vehicle">
+          <ul>
+            <li>
+              <h3>Vehicle 2</h3>
+              <img src="images/vehicle2.jpg" alt="Vehicle 2" onclick="openImage(this.src)">
+              <p>Vehicle 2 description</p>
+            </li>
+          </ul>
+                </div>
+        </div>
       </section>
       <!--Colision repair area, clients learn more about how the company can help them in accidents. 
         Im thinking of adding a button here that leads the client to the contact section/page -->

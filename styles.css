@@ -109,14 +109,26 @@ body {
   /* Inventory wrapper */
   #inventory{
     margin-top: 100px;
-    display: flex; 
+    height: 700px;
+    width: auto;
+    text-align: center;
+  }
+  #inventory ul{
+    list-style: none;
+  }
+  /* Vehicles styles */
+  #vehicle_container{
+    display: flex;
     flex-direction: row;
     align-items: center;
   }
-  /* Vehicles styles */
-  #vehicle_container img{
+  #vehicle{
+    text-align: center;
+  }
+  #vehicle img{
     height: auto;
     width: 100%;
+    align-items: center;
   }
   /* Collision Repair Section */
   #collision-repair {
