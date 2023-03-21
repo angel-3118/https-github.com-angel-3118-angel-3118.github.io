@@ -1,14 +1,11 @@
-/*I thought we were using a red color, did he ask for us to use blue instead?*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #F5F5F5;
   }
-  
+/* Header */
   header {
-    background-color: #ff0000
-;
-    /*For the height of the header i'm thinking we should have a fixed height. Or maybe add a marging to the vehicle container.*/
+    background-color: #ff0000;
     padding: 20px;
     text-align: center;
     position: fixed;
@@ -40,6 +37,7 @@ body {
     background-color: #1E90FF;
   }
   
+/* Main Section (Inventory, Collision, About, Contact Page) */
   main {
     padding: 20px;
     margin-top: 80px;
