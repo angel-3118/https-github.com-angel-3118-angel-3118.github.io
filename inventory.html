@@ -1,64 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inventory</title>
-    <link rel="stylesheet" href="inventory_style.css">
+    <link rel="stylesheet" href="inventory_style.css" />
   </head>
   <body>
-    <header>
-      <h1> Inventory</h1>
+    <header style="background-color: #ff4d4d; padding: 1rem;">
+      <h1 style="color: #fff; font-size: 2rem;">Inventory</h1>
     </header>
-    <main>
-      <section class="inventory">
-        <h2>New Vehicle</h2>
-        <ul>
-          <li>
-            <img src="brz/IMG_1870.jpeg" alt="Car Image 1">
-            <h3>2013 Subaru BRZ </h3>
-            <p>JF1ZCAc19d261173</p>
-            <p>130,000 miles</p>
-            <p>$10,000</p>
+    <main style="padding: 2rem; display: flex; flex-wrap: wrap; justify-content: space-between;">
+      <section class="inventory" style="flex-basis: 30%;">
+        <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">New Vehicles</h2>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="margin-bottom: 2rem;">
+            <figure>
+              <img src="brz/IMG_1870.jpeg" alt="2013 Subaru BRZ" style="width: 100%; height: auto; object-fit: cover; object-position: center;">
+              <figcaption>
+                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">2013 Subaru BRZ</h3>
+                <p style="margin-bottom: 0.5rem;">JF1ZCAc19d261173</p>
+                <p style="margin-bottom: 0.5rem;">130,000 miles</p>
+                <p style="margin-bottom: 0;">$10,000</p>
+              </figcaption>
+            </figure>
           </li>
-          <li>
-            <img src="camaro/IMG_1765.jpeg" alt="Car Image 2">
-            <h3>2017 Chevy Camaro RS</h3>
-            <p>1G1FD1RS5H0180265</p>
-            <p>61,000 miles </p>
-            <p>$20,000</p>
+          <li style="margin-bottom: 2rem;">
+            <figure>
+              <img src="camaro/IMG_1765.jpeg" alt="2017 Chevy Camaro RS" style="width: 100%; height: auto; object-fit: cover; object-position: center;">
+              <figcaption>
+                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">2017 Chevy Camaro RS</h3>
+                <p style="margin-bottom: 0.5rem;">1G1FD1RS5H0180265</p>
+                <p style="margin-bottom: 0.5rem;">61,000 miles</p>
+                <p style="margin-bottom: 0;">$20,000</p>
+              </figcaption>
+            </figure>
           </li>
-          <li>
-            <img src="camry/IMG_1875.jpeg" alt="Car Image 3">
-            <h3>2014 Toyota Camry</h3>
-            <p>4T1BF1FK5EU777324</p>
-            <p>35,000 miles</p>
-            <p>$12,500</p>
+          <li style="margin-bottom: 2rem;">
+            <figure>
+              <img src="camry/IMG_1875.jpeg" alt="2014 Toyota Camry" style="width: 100%; height: auto; object-fit: cover; object-position: center;">
+              <figcaption>
+                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">2014 Toyota Camry</h3>
+                <p style="margin-bottom: 0.5rem;">4T1BF1FK5EU777324</p>
+                <p style="margin-bottom: 0.5rem;">35,000 miles</p>
+                <p style="margin-bottom: 0;">$12,500</p>
+              </figcaption>
+            </figure>
           </li>
-          <li>
-            <img src="honda odyssey/IMG_1883.jpeg" alt="Car Image 4">
-            <h3>2013 honda odyssey </h3>
-            <p>5FNPL5H45DBQ70717</p>
-            <p>130,000 miles </p>
-            <p>$12,000</p>
+          <li style="margin-bottom: 2rem;">
+            <figure>
+              <img src="honda odyssey/IMG_1883.jpeg" alt="2013 Honda odyssey" style="width: 100%; height: auto; object-fit: cover; object-position: center;">
+              <figcaption>
+                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">2013 Honda Odyssey</h3>
+                <p style="margin-bottom: 0.5rem;">5FNPL5H45DBQ70717</p>
+                <p style="margin-bottom: 0.5rem;">130,000 miles</p>
+                <p style="margin-bottom: 0;">$12,500</p>
+              </figcaption>
+            </figure>
           </li>
-          <li>
-            <img src="nissan frontier/IMG_1887.jpeg" alt="Car Image 5">
-            <h3>2012 Nissan armada </h3>
-            <p>5N1BA0ND6CN621294</p>
-            <p>100,000 miles</p>
-            <p>$11,500</p>
+          <li style="margin-bottom: 2rem;">
+            <figure>
+              <img src="nissan_frontier/IMG_1887.jpeg" alt="2012 Nissan Frontier" style="width: 100%; height: auto; object-fit: cover; object-position: center;">
+              <figcaption>
+                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">2012 Nissan Frontier</h3>
+                <p style="margin-bottom: 0.5rem;">5N1BA0ND6CN621294</p>
+                <p style="margin-bottom: 0.5rem;">61,000 miles</p>
+                <p style="margin-bottom: 0;">$11,500</p>
+              </figcaption>
+            </figure>
           </li>
-          <li>
-            <img src="titan/IMG_1830.jpeg" alt="Car Image 6">
-            <h3>2017 Nissan Titan </h3>
-            <p>1N6AA1EKXHN542509></p>
-            <p>61,000 miles</p>
-            <p>$25,000</p>
+          <li style="margin-bottom: 2rem;">
+            <figure>
+              <img src="titan/IMG_1830.jpeg" alt="2014 Toyota Camry" style="width: 100%; height: auto; object-fit: cover; object-position: center;">
+              <figcaption>
+                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">2017 Nissan Titan</h3>
+                <p style="margin-bottom: 0.5rem;">1N6AA1EKXHN542509</p>
+                <p style="margin-bottom: 0.5rem;">61,000 miles</p>
+                <p style="margin-bottom: 0;">$25,000</p>
+              </figcaption>
+            </figure>
           </li>
-        </ul>
-      </section>
-    </main>
-  </body>
-</html>
