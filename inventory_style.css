@@ -16,6 +16,7 @@
 	h1 {
 	margin: 0;
 	font-size: 36px;
+	color: black;
 	}
 	
 	main {
@@ -34,6 +35,42 @@
 	  height: auto;
 	  margin-bottom: 20px;
 	}
+	body {
+		font-family: Arial, sans-serif;
+		margin: 0;
+		background-color: #F5F5F5;
+	  }
+	  /* Header */
+	  header {
+		background-color: #ff0000;
+		padding: 20px;
+		text-align: center;
+		position: ;
+		width: 100%;
+		top: 0;
+		z-index: 1;
+	  }
+	  header h1{
+		color: #ffff;
+	  }
+	  
+	  nav ul {
+		display: flex;
+		justify-content: center;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	  }
+	  
+	  nav a {
+		color: white;
+		display: block;
+		padding: 10px 20px;
+		text-decoration: none;
+	  }
+	  
+	  nav a:hover {
+		background-color: #1E90FF;
+	  }
 	
 	@media (max-width:
-	  
