@@ -1,18 +1,6 @@
 <head>
     <title>Dealership Website</title>
     <link rel="stylesheet" type="text/css" href="main_styles.css">
-    <script type="text/javascript">
-      function openImage(imageSrc) {
-        var modal = document.getElementById("modal");
-        var modalImg = document.getElementById("modalImg");
-        modal.style.display = "block";
-        modalImg.src = imageSrc;
-      }
-  
-      function closeModal() {
-        var modal = document.getElementById("modal");
-        modal.style.display = "none";
-      }
     </script>
   </head>
   <body>
@@ -21,10 +9,10 @@
       <h1>Ricardo Auto Sale</h1>
       <nav>
         <ul>
-          <li><a href="inventory.html">Inventory</a></li>
-                  <li><a href="collision.html">Collision Repair</a></li>
-  
-          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="main_index.html">Home</a></li>
+          <li><a href="inventory.html" >Inventory</a></li>
+          <li><a href="collision.html">Collision Repair</a></li>
+          <li><a href="#about">About us</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
@@ -40,7 +28,9 @@
           <ul>
             <li>
               <h3>Vehicle 1</h3>
-              <img src="images/vehicle1.jpg" alt="Vehicle 1" onclick="openImage(this.src)">
+              <a href="inventory.html" target="_blank">
+              <img src="Images/vehicle1.jpg" alt="Vehicle 1">
+              </a>
               <p>Vehicle 1 description</p>
             </li>
           </ul>
@@ -49,7 +39,9 @@
           <ul>
             <li>
               <h3>Vehicle 2</h3>
-              <img src="images/vehicle2.jpg" alt="Vehicle 2" onclick="openImage(this.src)">
+              <a href="inventory.html" target="_blank">
+              <img src="Images/vehicle2.jpg" alt="Vehicle 2" >
+            </a>
               <p>Vehicle 2 description</p>
             </li>
           </ul>
@@ -66,10 +58,10 @@
     <p>If you've been in an accident, don't hesitate to contact us. We'll be there to help you every step of the way.</p>
   </section>
   <!--About section, info on the company-->
-      <!--<section id="about">
+      <section id="about">
         <h2>About Us</h2>
         <p>Dealership description and information</p>
-      </section>-->
+      </section>
 <!--Contact section. Im wondering if its better to do this in a separate page?-->
       <section id="contact">
         <h2>Contact Us</h2>
@@ -84,7 +76,7 @@
         </form>
       </section>
     </main>
-    <div id="modal" onclick="closeModal()">
+    <div id="modal">
       <img id="modalImg">
     </div>
     <footer>
@@ -92,83 +84,7 @@
     </footer>
   </body>
 
-  <!-- I put the code Angel added from codepen.io in a comment. Will go through it later and added th needed editions to the original code. -->
-
-  <!-- <title>Dealership Website</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <script type="text/javascript">
-    function openImage(imageSrc) {
-      var modal = document.getElementById("modal");
-      var modalImg = document.getElementById("modalImg");
-      modal.style.display = "block";
-      modalImg.src = imageSrc;
-    }
-
-    function closeModal() {
-      var modal = document.getElementById("modal");
-      modal.style.display = "none";
-    }
-  </script>
-
-</head>
-<body>
-  <header>
-<img src="https://media.istockphoto.com/id/1151919306/vector/modern-car-silhouette-in-side-view-blue-neon-car-silhouette-for-logo-banner-or-marketing.jpg?s=170667a&w=0&k=20&c=BFpF5qxxXfLo5JIXxQ-rDXO6Qkmkb2KrsPlCeJSvih0=" alt="Header Image">
-<h1>Richard AutoSale</h1>
-<nav>
-  <ul>
-    <li><a href="#inventory">Inventory</a></li>
-    <li><a href="#collision-repair">Collision Repair</a></li>
-    <li><a href="#about">About Us</a></li>
-    <li><a href="#contact">Contact Us</a></li>
-  </ul>
-</nav>
-</header>
-
-  <main>
-    <section id="inventory">
-      <h2>Vehicle Inventory</h2>
-      <ul>
-        <li>
-          <h3>Vehicle 1</h3>
-          <img src="vehicle1.jpg" alt="Vehicle 1" onclick="openImage(this.src)">
-          <p>Vehicle 1 description</p>
-        </li>
-        <li>
-          <h3>Vehicle 2</h3>
-          <img src="vehicle2.jpg" alt="Vehicle 2" onclick="openImage(this.src)">
-          <p>Vehicle 2 description</p>
-        </li>
-      </ul>
-    </section>
-    <section id="collision-repair">
-  <h2>Collision Repair</h2>
-  <p>At [Your Company Name], we understand the stress and inconvenience that come with car accidents. That's why we offer comprehensive collision repair services to get you back on the road as soon as possible.</p>
-  <p>Our team of certified technicians is trained to repair all types of vehicles, from basic fender benders to major collisions. We use the latest tools and techniques to ensure a high-quality repair that's as good as new.</p>
-  <p>We work with all insurance companies to simplify the claim process and take care of everything from start to finish. And, as a full-service collision center, we offer rental car assistance, towing services, and a lifetime warranty on all of our repairs.</p>
-  <p>If you've been in an accident, don't hesitate to contact us. We'll be there to help you every step of the way.</p>
-</section>
-
-    <section id="about">
-      <h2>About Us</h2>
-      <p>Dealership description and information</p>
-    </section>
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message"></textarea>
-        <input type="submit" value="Submit">
-      </form>
-    </section>
-  </main>
-  <div id="modal" onclick="closeModal()">
-    <img id="modalImg">
-  </div>
+  
   <footer>
     <p>&copy; 2023 Richard Auto Sale Name</p>
   </footer>
